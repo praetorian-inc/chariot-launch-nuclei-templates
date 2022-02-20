@@ -15,3 +15,6 @@ Detections:
 * Detect Splunk Enterprise Panel
 * Detect Terraform Enterprise
 * Detect Concourse CI
+
+New Subdomain Takeover Templates:
+* BrandPad: https://hackerone.com/reports/1474784
