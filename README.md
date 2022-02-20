@@ -14,3 +14,4 @@ Detections:
 * Detect Code42 panel
 * Detect Splunk Enterprise Panel
 * Detect Terraform Enterprise
+* Detect Concourse CI
