@@ -1,0 +1,18 @@
+id: code42-panel-detect
+
+info:
+  name: Code42 Panel
+  author: Adam Crosser
+  severity: info
+  tags: panel
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/login/#/login'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "<body id=\"login-app\" class=\"login\">"
