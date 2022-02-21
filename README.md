@@ -18,3 +18,6 @@ Detections:
 
 New Subdomain Takeover Templates:
 * BrandPad: https://hackerone.com/reports/1474784
+
+Other Ideas:
+* Hashicorp Nomad
