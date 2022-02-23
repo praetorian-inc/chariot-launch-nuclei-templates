@@ -10,7 +10,7 @@ info:
 requests:
   - method: GET
     path:
-      - '{{BaseURL}}/'
+      - '{{BaseURL}}/session'
 
     matchers-condition: and
     matchers:
