@@ -1,0 +1,19 @@
+---
+id: terraform-enterprise-detection
+
+info:
+  name: Terraform Enterprise Detection
+  author: Adam Crosser
+  severity: info
+  tags: panel
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Terraform Enterprise by HashiCorp</title>'
