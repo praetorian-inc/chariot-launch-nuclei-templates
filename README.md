@@ -9,6 +9,7 @@ Token Spraying:
 Vulnerabilities: 
 * HTTPBin XSS
 * HTTPBin Open Redirection
+* Better template for exposed drupal install files
 
 Detections:
 * Detect Code42 panel
