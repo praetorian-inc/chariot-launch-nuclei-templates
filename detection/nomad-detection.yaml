@@ -1,0 +1,19 @@
+id: nomad-detection
+
+info:
+  name: Exposed Nomad Detection
+  author: praetorian-thendrickson
+  severity: info
+  reference: https://www.shodan.io/search?query=title%3A%22Nomad%22
+  tags: panel,case-reviewed
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/ui/jobs'
+    redirects: true
+
+    matchers:
+      - type: word
+        words:
+          - '<title>Nomad</title>'
