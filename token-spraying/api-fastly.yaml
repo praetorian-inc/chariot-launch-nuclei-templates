@@ -15,7 +15,6 @@ requests:
     headers:
       Fastly-Key: "{{token}}"
 
-    matchers-condition: and
     matchers:
       - type: status
         status:
