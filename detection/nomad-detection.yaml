@@ -5,7 +5,7 @@ info:
   author: praetorian-thendrickson
   severity: info
   reference: https://www.shodan.io/search?query=title%3A%22Nomad%22
-  tags: panel,case-reviewed
+  tags: panel
 
 requests:
   - method: GET

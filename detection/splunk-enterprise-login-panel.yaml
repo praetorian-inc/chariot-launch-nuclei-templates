@@ -5,7 +5,7 @@ info:
   author: praetorian-thendrickson
   severity: info
   reference: https://www.shodan.io/search?query=title%3A%22Login+Splunk%22
-  tags: panel,splunk,case-reviewed
+  tags: panel,splunk
 
 requests:
   - method: GET
