@@ -2,11 +2,6 @@
 
 Ideas for new templates:
 
-Token Spraying:
-* Auth0 API tokens
-* Cloudflare API tokens
-* Confluent token spraying templates
-
 Vulnerabilities: 
 * HTTPBin XSS
 * HTTPBin Open Redirection
@@ -15,6 +10,3 @@ Vulnerabilities:
 
 New Subdomain Takeover Templates:
 * BrandPad: https://hackerone.com/reports/1474784
-
-Other Ideas:
-* Hashicorp Nomad
