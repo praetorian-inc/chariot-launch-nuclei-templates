@@ -1,0 +1,19 @@
+id: sharepoint-detection
+
+info:
+  name: Identified Microsoft SharePoint Instance
+  author: Adam Crosser
+  severity: info
+  reference: https://cofense.com/
+  tags: panel
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/_login/default.aspx'
+    redirects: true
+
+    matchers:
+      - type: word
+        words:
+          - '<meta name="GENERATOR" content="Microsoft SharePoint"'
