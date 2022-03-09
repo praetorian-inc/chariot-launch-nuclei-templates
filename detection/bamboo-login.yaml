@@ -1,0 +1,25 @@
+id: bamboo-login
+
+info:
+  name: Bamboo CICD
+  author: thardt-praetorian
+  severity: info
+  reference: https://www.shodan.io/search?query=http.title%3A%22Log+in+as+a+Bamboo+user%22
+  tags: panel,bamboo
+
+requests:
+  - method: GET
+    redirects: true
+    max-redirects: 5
+    path:
+      - '{{BaseURL}}/'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Log in as a Bamboo user'
+
+      - type: status
+        status:
+          - 200

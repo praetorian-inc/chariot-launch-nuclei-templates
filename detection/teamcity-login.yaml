@@ -1,0 +1,25 @@
+id: teamcity-login
+
+info:
+  name: TeamCity CICD Login
+  author: thardt-praetorian
+  severity: info
+  reference: https://www.shodan.io/search?query=http.title%3A%TeamCity%22
+  tags: panel,teamcity
+
+requests:
+  - method: GET
+    redirects: true
+    max-redirects: 5
+    path:
+      - '{{BaseURL}}/'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Log in to TeamCity'
+
+      - type: status
+        status:
+          - 200

@@ -1,0 +1,23 @@
+id: sonatype-panel
+
+info:
+  name: Exposed Sonatype Nexus Repository Instance
+  author: thardt-praetorian
+  severity: info
+  reference: https://www.shodan.io/search?query=http.title%3A%22Sonatype%22
+  tags: panel,sonatype
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Sonatype</title>'
+
+      - type: status
+        status:
+          - 200

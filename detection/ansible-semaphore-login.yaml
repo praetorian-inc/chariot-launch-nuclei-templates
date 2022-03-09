@@ -1,0 +1,25 @@
+id: ansible-semaphore-login
+
+info:
+  name: Ansible Semaphore CICD
+  author: Yuzhe-zhang-0
+  severity: info
+  reference: https://www.shodan.io/search?query=http.title%3A%22Ansible+Semaphore%22
+  tags: panel,ansible,semaphore
+
+requests:
+  - method: GET
+    redirects: true
+    max-redirects: 5
+    path:
+      - '{{BaseURL}}/'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Ansible Semaphore'
+
+      - type: status
+        status:
+          - 200
