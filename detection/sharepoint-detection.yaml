@@ -4,7 +4,6 @@ info:
   name: Identified Microsoft SharePoint Instance
   author: Adam Crosser
   severity: info
-  reference: https://cofense.com/
   tags: panel
 
 requests:

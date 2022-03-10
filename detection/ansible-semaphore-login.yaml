@@ -19,6 +19,7 @@ requests:
       - type: word
         words:
           - '<title>Ansible Semaphore'
+          - '>Semaphore</title>'
 
       - type: status
         status:
