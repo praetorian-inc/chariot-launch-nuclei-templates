@@ -1,0 +1,19 @@
+id: splunk-soar-login-panel
+
+info:
+  name: Exposed Splunk SOAR Instance
+  author: thardt-praetorian
+  severity: info
+  reference: https://www.shodan.io/search?query=title%3A%22Splunk+Soar%22
+  tags: panel,splunk,soar
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}/login?next=/'
+    redirects: true
+
+    matchers:
+      - type: word
+        words:
+          - 'Splunk SOAR'
